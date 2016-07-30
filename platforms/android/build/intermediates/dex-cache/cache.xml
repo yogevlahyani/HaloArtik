@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/yogevlahyani/Documents/Dev/Apps/HaloArtik/platforms/android/build/intermediates/exploded-aar/android/CordovaLib/unspecified/debug/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="b77ba94d9b0df2c80f699fbc37f76e5ed52537a8">
+        <dex dex="/home/yogevlahyani/Documents/Dev/Apps/HaloArtik/platforms/android/build/intermediates/pre-dexed/debug/CordovaLib-unspecified-debug_e8699395379ad23ffc1b53ea834c51d8ed059451.jar" />
+    </item>
+
+</items>

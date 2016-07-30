@@ -1,0 +1,42 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">הרשמה</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeRegister()" style="background: #000; color: #fff;">סגור</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <form ng-submit="doRegister()">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">שם מלא</span>
+          <input type="text" ng-model="regData.fname">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">שם משתמש</span>
+          <input type="text" ng-model="regData.username">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">אימייל</span>
+          <input type="email" ng-model="regData.email">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">סיסמא</span>
+          <input type="password" ng-model="regData.password">
+        </label>
+        </label>
+        <label class="item item-input">
+          <span class="input-label">וודא סיסמא</span>
+          <input type="password" ng-model="regData.repassword">
+        </label>
+        <label class="item">
+          <button class="button button-block button-positive" type="submit">הירשם</button>
+        </label>
+      </div>
+    </form>
+    <ion-list>
+        <ion-item ng-repeat="err in errors track by $index" class="fadeOut" ng-bind="err">
+        </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-modal-view>
